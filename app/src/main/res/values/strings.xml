@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StudyTime</string>
+    <string name="login">Login</string>
+    <string name="login_checkbox">Remember me</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="text_login">Login to your account</string>
+    <string name="welcome_login">Welcome Back</string>
+
+
+
+</resources>

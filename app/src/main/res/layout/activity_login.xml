@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".Login">
+
+
+    <View
+        android:id="@+id/view"
+        style="@style/ImageStudent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/student"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="@string/welcome_login"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        style="@style/Login_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/student"
+        />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/text_login"
+        android:textSize="15sp"
+        style="@style/Login_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_welcome"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:hint="E-mail"
+        android:drawableRight="@drawable/ic_email"
+        android:textColorHint="@color/navy_70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_text"
+        />
+
+    <EditText
+        android:id="@+id/edit_password"
+        style="@style/Edit_Text"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_email"
+        android:textColorHint="@color/navy_70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_login"
+        style="@style/Button"
+        android:text="@string/login"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkbox" />
+    />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="@style/Checkbox"
+        android:text="@string/login_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edit_password"
+        />
+
+    <TextView
+        android:id="@+id/change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        style="@style/Login_text"
+        app:layout_constraintRight_toRightOf="@id/checkbox"
+        app:layout_constraintTop_toBottomOf="@id/edit_password"
+        app:layout_constraintTop_toTopOf="@id/checkbox"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
