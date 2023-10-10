@@ -5,6 +5,12 @@
     <string name="forgot_password">Forgot password</string>
     <string name="text_login">Login to your account</string>
     <string name="welcome_login">Welcome Back</string>
+    <string name="resgister_text">Dont have an account? Register</string>
+    <string name="welcome_register">Welcome to StudyTime</string>
+    <string name="register_text_rp">Sign Up to get started</string>
+    <string name="sign_up">Sign Up</string>
+
+
 
 
 
